@@ -23,10 +23,10 @@ class CommentsController extends Controller
 
 	public function store(Request $request)
 	{
-		$post = new Comment;
-		$post->title = $request->title;
-		$post->description = $request->description;
-		$post->save();
+		$comment = new Comment;
+		$comment->title = $request->title;
+		$comment->description = $request->description;
+		$comment->save();
 	}
 }
 				
