@@ -23,14 +23,14 @@ class EmployeesController extends Controller
 
 	public function store(Request $request)
 	{
-		$post = new Employee;
-		$post->id = $request->id;
-		$post->name = $request->name;
-		$post->title = $request->title;
-		$post->address = $request->address;
-		$post->phone = $request->phone;
-		$post->salary = $request->salary;
-		$post->save();
+		$employee = new Employee;
+		$employee->id = $request->id;
+		$employee->name = $request->name;
+		$employee->title = $request->title;
+		$employee->address = $request->address;
+		$employee->phone = $request->phone;
+		$employee->salary = $request->salary;
+		$employee->save();
 	}
 	
 }
